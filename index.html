@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano jouable</title>
+    <link rel="icon" type="image/webp" sizes="32x32" href="img/piano.webp" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Piano jouable</h1>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <div class="header">
+          <div class="column volume__slider">
+            <h2 class="volume__title">Volume</h2>
+            <input type="range" min="0" max="1" value="0.5" step="any" />
+          </div>
+          <div class="column keys__checkbox">
+            <h2>Montrer les clés</h2>
+            <input type="checkbox" checked />
+          </div>
+        </div>
+        <ul class="piano__keys">
+          <li class="key white" data-key="a"><span>a</span></li>
+          <li class="key black" data-key="w"><span>w</span></li>
+          <li class="key white" data-key="s"><span>s</span></li>
+          <li class="key black" data-key="e"><span>e</span></li>
+          <li class="key white" data-key="d"><span>d</span></li>
+          <li class="key white" data-key="f"><span>f</span></li>
+          <li class="key black" data-key="t"><span>t</span></li>
+          <li class="key white" data-key="g"><span>g</span></li>
+          <li class="key black" data-key="y"><span>y</span></li>
+          <li class="key white" data-key="h"><span>h</span></li>
+          <li class="key black" data-key="u"><span>u</span></li>
+          <li class="key white" data-key="j"><span>j</span></li>
+          <li class="key white" data-key="k"><span>k</span></li>
+          <li class="key black" data-key="o"><span>o</span></li>
+          <li class="key white" data-key="l"><span>l</span></li>
+          <li class="key black" data-key="p"><span>p</span></li>
+          <li class="key white" data-key=";"><span>;</span></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
