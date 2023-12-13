@@ -2,11 +2,11 @@
 
 ## Le challenge
 
-Construction d'un piano en HTLM5 , CSS3 et JavScript prêt à jouer des airs simples.
+Construction d'un piano en HTLM5 , CSS3 et JavScript permettant de jouer des airs simples.
 
 ## Démonstrtion
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/playable_piano/
 
 ## Développez avec
 
