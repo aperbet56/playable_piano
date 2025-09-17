@@ -1,8 +1,10 @@
 ## PIANO VIRTUEL 🎹
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
-Construction d'un piano en HTLM5 , CSS3 et JavScript permettant de jouer des airs simples.
+Construction d'un piano virtuel en HTLM5 , CSS3 et JavaScript permettant de jouer des airs simples.
 
 ## Démonstrtion
 
