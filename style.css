@@ -1,9 +1,16 @@
+/**** Importation des polices "Archivo Black" et "Libertinus Keyboard" ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libertinus+Keyboard&display=swap');
+
 /**** Reset ****/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+ul {
     list-style-type: none;
 }
 
@@ -15,22 +22,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6dbef8;
-    font-family: sans-serif;
+    background-color: #fec7d7;
+    color: #0e172c;
+    font-family: "Archivo Black", sans-serif;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
 
+header {
+    flex-direction: column;
+}
+
+header h1,
+header p {
+    text-align: center;
+}
+
 header h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    font-weight: 700;
+    font-family: "Libertinus Keyboard", system-ui;
+    font-style: italic;
+}
+
+header p {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .main__content {
@@ -47,7 +73,7 @@ header h1 {
     width: 100%;
     border-radius: 20px;
     padding: 35px 40px;
-    background-color: #141414;
+    background-color: #0e172c;
 }
 
 .header {
@@ -69,7 +95,7 @@ header h1 {
 }
 
 .volume__slider input {
-    accent-color: #ffffff;
+    accent-color: #fffffe;
 }
 
 .keys__checkbox input {
@@ -97,7 +123,7 @@ header h1 {
 
 .keys__checkbox input:checked::before {
     left: 35px;
-    background: #ffffff;
+    background-color: #fffffe;
 }
 
 .piano__keys {
@@ -117,13 +143,13 @@ header h1 {
     width: 70px;
     height: 230px;
     border-radius: 8px;
-    border: 1px solid #000000;
-    background-image: linear-gradient(#ffffff 96%, #eeeeee 4%);
+    border: 1px solid #0e172c;
+    background-image: linear-gradient(#fffffe 96%, #eeeeee 4%);
 }
 
 .piano__keys .white.active {
-    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
-    background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, #fffffe 0%, #eeeeee 100%);
 }
 
 .piano__keys .black {
@@ -132,12 +158,12 @@ header h1 {
     z-index: 2;
     margin: 0 -22px 0 -22px;
     border-radius: 0 0 5px 5px;
-    background-image: linear-gradient(#333333, #000000);
+    background-image: linear-gradient(#333333, #0e172c);
 }
 
 .piano__keys .black.active {
     box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to bottom, #000000, #434343);
+    background-image: linear-gradient(to bottom, #0e172c, #434343);
 }
 
 .piano__keys span {
@@ -166,7 +192,7 @@ footer span {
         justify-content: center;
     }
 
-    .volume__title{
+    .volume__title {
         margin-top: -20px;
     }
 
@@ -179,18 +205,21 @@ footer span {
     .piano__keys .key:where(:nth-child(9), :nth-child(10)) {
         display: none;
     }
+
     .piano__keys .black {
         height: 100px;
         width: 40px;
         margin: 0 -20px 0 -20px;
     }
+
     .piano__keys .white {
         height: 180px;
         width: 60px;
     }
 }
 
-@media  screen and (max-width: 435px) {
+@media screen and (max-width: 435px) {
+
     .piano__keys .key:nth-child(13),
     .piano__keys .key:nth-child(14),
     .piano__keys .key:nth-child(15),
@@ -198,6 +227,7 @@ footer span {
     .piano__keys .key:nth-child(17) {
         display: none;
     }
+
     .piano__keys .white {
         width: 50px;
     }
