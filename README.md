@@ -1,4 +1,4 @@
-## PIANO JOUABLE (PLAYABLE PIANO)
+## PIANO VIRTUEL 🎹
 
 ## Le challenge
 
@@ -18,3 +18,4 @@ Lien vers le projet : https://aperbet56.github.io/playable_piano/
 - JavaScript
 - Code JavaScript commenté
 - Desktop first
+- Importation des polices "Archivo Black" et "Libertinus Keyboard"
